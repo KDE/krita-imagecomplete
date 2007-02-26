@@ -1,0 +1,20 @@
+
+TODO:
+
+Problems met:
+1) KisColorSpace doesn't have any method for symmetrically extracting out and 
+putting in a component of a pixel. So all symmetrical component operations have to be done
+with with:
+  a) KisPaintDevice::convertToQImage/convertFromQImage - which ignores higher precision for 16bit images
+  b) KisColorSpace::fromQColor/toQColor - same problem as above and difficult to use.
+  
+Ideally, KisColorSpace and KisIteratorPixelTrait could be used together to set/get pixels from KisPaintDevice
+
+2) What the heck does KisPaintDevice::m_x/m_y do? I think its a drawing state variable inside the PaintDevice==BAD!
+3) Filter doesn't show in the Poisson category but shows in Other instead.
+4) KisFilter::process(..., rect) gives the rect which is the area selected if there is a selection.
+However, I need the rect of the whole image, not just the selected area. Maybe there should be a option for selecting which type of rect to receive.
+5) Progress state doesn't follow RAII. The proper method is to call process from a function which initializes/deinitializes the progress bar.
+6) KisRectIteratorPixel doesn't have a default constructor. It should.
+7) Maybe there should be a method to reset iterators instead of having to rebuild/copy them each time
+

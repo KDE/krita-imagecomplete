@@ -1,0 +1,8 @@
+To build, you need to install gmm (svn co svn://anonsvn.kde.org/home/kde/trunk/kdesupport/gmm) and
+install it.
+
+If you install gmm to a nonstandard location (eg. $HOME/kde), then you need specify that
+when configuring krita-plugins. (eg. ./comfigure --includedir=$HOME/kde)
+
+
+

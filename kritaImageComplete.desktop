@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Basic Image Completion Filter
+Comment=Completes the selected pixels in an image
+ServiceTypes=Krita/Filter
+Type=Service
+X-KDE-Library=kritaImageComplete
+X-Krita-Version=2

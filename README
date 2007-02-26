@@ -1,0 +1,10 @@
+ImageComplete:
+Benjamin Schleimer <bensch128@yahoo.com>
+
+This plugin implements basic Poisson Image Completion. Query google for "Poisson Image Completion" for more details.
+
+To use: 
+1) Open a image file in krita.
+2) Select the regions which you want to fill.
+3) Run the plugin and it'll fill in the selected regions.
+4) It works very well when trying to remove text from an image.
