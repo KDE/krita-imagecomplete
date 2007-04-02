@@ -67,7 +67,7 @@ KritaImageComplete::~KritaImageComplete()
 }
 
 KisFilterImageComplete::KisFilterImageComplete() 
-    : KisFilter(id(), "poisson", i18n("&ImageComplete"))
+    : KisFilter(id(), "enhance", i18n("&ImageComplete"))
 {
 
 }
