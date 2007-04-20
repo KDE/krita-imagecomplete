@@ -83,11 +83,13 @@ void KisFilterImageComplete::process(KisPaintDeviceSP src, KisPaintDeviceSP dst,
     Q_ASSERT(dst != 0);
 
     if(src->hasSelection() == false)
-    {
-        // Popup a error dialog here.
-        KMessageBox::information (0, 
-                                  i18n("You must select a region to Complete."), 
-                                  i18n("Region was not selected"));
+    {	
+	// Have to clear the progress to allow the info box to work
+	setProgressDone();
+	// Popup a error dialog here.
+	KMessageBox::information (0,
+				  i18n("You must select a region to Complete."),
+				  i18n("Region was not selected"));
     } else
     {
         // NOTE: We need to process the whole image, not just the selected area.
@@ -149,6 +151,7 @@ void KisFilterImageComplete::process(KisPaintDeviceSP src, KisPaintDeviceSP dst,
             }
         } catch(...)
         {
+	    setProgressDone();
             // Show a dialog box
             // Popup a error dialog here.
             KMessageBox::error(0, 
