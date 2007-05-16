@@ -46,7 +46,7 @@ public:
 			 KisFilterConfiguration*, const QRect&);
     virtual ColorSpaceIndependence colorSpaceIndependence() { return FULLY_INDEPENDENT; };
     static inline KisID id() { return KisID("ImageComplete", i18n("ImageComplete")); };
-    virtual bool supportsPainting() { return true; }
+    virtual bool supportsPainting() { return false; }
     virtual bool supportsPreview() { return false; }
     virtual bool supportsIncrementalPainting() { return false; }
     virtual bool supportsAdjustmentLayers() { return false; }
