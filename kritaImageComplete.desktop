@@ -18,6 +18,7 @@ Name[uk]=Простий фільтр доповнення зображення
 Name[x-test]=xxBasic Image Completion Filterxx
 Comment=Completes the selected pixels in an image.
 Comment[et]=Täiendab pildi valitud piksleid.
+Comment[fr]=Rempli les pixels sélectionnés dans une image
 Comment[ga]=Comhlánaigh na picteilíní roghnaithe in íomhá.
 Comment[pt]=Completa os pixels seleccionados numa imagem.
 Comment[pt_BR]=Completa os pixels seleccionados numa imagem.
