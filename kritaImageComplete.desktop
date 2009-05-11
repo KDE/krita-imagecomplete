@@ -17,6 +17,7 @@ Name[tr]=Temel Resim Tamamlama Süzgeci
 Name[uk]=Простий фільтр доповнення зображення
 Name[x-test]=xxBasic Image Completion Filterxx
 Comment=Completes the selected pixels in an image.
+Comment[es]=Completa los puntos seleccionados en una imagen.
 Comment[et]=Täiendab pildi valitud piksleid.
 Comment[fr]=Rempli les pixels sélectionnés dans une image
 Comment[ga]=Comhlánaigh na picteilíní roghnaithe in íomhá.
