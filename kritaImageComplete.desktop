@@ -24,6 +24,7 @@ Comment[ga]=Comhlánaigh na picteilíní roghnaithe in íomhá.
 Comment[pt]=Completa os pixels seleccionados numa imagem.
 Comment[pt_BR]=Completa os pixels seleccionados numa imagem.
 Comment[sv]=Kompletterar markerade bildpunkter i en bild.
+Comment[tr]=Bir resimdeki seçili pikselleri tamamlar.
 Comment[uk]=Заповнення вибрані пікселі зображення.
 Comment[x-test]=xxCompletes the selected pixels in an image.xx
 ServiceTypes=Krita/Filter
